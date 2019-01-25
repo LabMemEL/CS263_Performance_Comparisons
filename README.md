@@ -1,11 +1,5 @@
 # CS263_Performance_Comparisons
-
-# benchmarks
-benchmarksgame
-pidigits, binary-trees, n-body, reverse-complement & k-nucleotide
-
-https://benchmarksgame-team.pages.debian.net/benchmarksgame/ 
-
-sudoku, matmul, patmch
-
-https://attractivechaos.github.io/plb/
+# Reference
+1. [The Computer Language Benchmark Game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/)
+2. [Programming Language Benchmarks](https://attractivechaos.github.io/plb/)
+3. [Language Benchmark](http://www.bioinformatics.org/benchmark/)
