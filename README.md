@@ -1,7 +1,7 @@
 # CS263_Performance_Comparisons
 
 ## Language Benchmarks
-* pidigits :Streaming arbitrary-precision arithmetic
+* [pidigits] :Streaming arbitrary-precision arithmetic
 * binary-trees: Allocate and deallocate many many binary trees
 * n-body: Double-precision N-body simulation
 * reverse-complement: write DNA reverse complement
@@ -19,6 +19,13 @@
 | Week 6 (Feb.9 ~ Feb.15) | Implement Sudoku solving n different programming language. Estimate their performance.      |
 | Week 7 (Feb.16 ~ Feb.22) | Implement Pattern Matching and Matrix multiplication in different programming language. Estimate their performance.    |
 | Week 8 (Feb.23 ~ Mar.1) | Estimate and validate how much the use of languages we choose cost when run using different instance sizes on cloud infrastructures, e.g. AWS and Azure   |
+
+## Performance
+* pidigits
+
+| Argv | Execution Time(sec) | Memory(bytes) |
+| :---: | :----: | :-------: |
+|1000 | 1.4823482036590576  | 12607488 |
 
 ## Reference
 1. [The Computer Language Benchmark Game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/)
