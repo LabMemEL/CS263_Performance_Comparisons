@@ -25,8 +25,11 @@
 
 | Argv | Execution Time(sec) | Memory(bytes) |
 | :---: | :----: | :-------: |
-|1000 | 1.4823482036590576  | 12607488 |
-
+| 500 | 0.0107309818267822  | 9805824  |
+|1000 | 0.0260009765625     | 9777152 |
+|5000 | 0.3612260818481445  | 10780672 |
+|10000| 1.3939342498779297  | 12271616 |
+|50000| NA | NA|
 ## Reference
 1. [The Computer Language Benchmark Game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/)
 2. [Programming Language Benchmarks](https://attractivechaos.github.io/plb/)
