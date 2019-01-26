@@ -13,8 +13,8 @@
 ## Project Plan
 | Week          | Description           | 
 | :----: | -------------|
-| Week 3 (Jan.19 ~ Jan.25)      | Implement two same algorithms: pidigits and binary-trees in Javascript, Ruby and Python. Estimate their performance in several aspects. |
-| Week 4 (Jan.26 ~ Feb.1)      | Implement three same algorithms: n-body, reverse-complement and k-nucleotide. Estimate their performance in several aspects.      | 
+| Week 3 (Jan.19 ~ Jan.25)      | Implement two algorithms: pidigits and binary-trees in Javascript, Ruby and Python. Estimate their performance in several aspects. |
+| Week 4 (Jan.26 ~ Feb.1)      | Implement three algorithms: n-body, reverse-complement and k-nucleotide. Estimate their performance in several aspects.      | 
 | Week 5 (Feb.2 ~ Feb.8) | Explore and find two algorithms in cryptographic engineering and estimate their performance      |
 | Week 6 (Feb.9 ~ Feb.15) | Implement Sudoku solving n different programming language. Estimate their performance.      |
 | Week 7 (Feb.16 ~ Feb.22) | Implement Pattern Matching and Matrix multiplication in different programming language. Estimate their performance.    |
