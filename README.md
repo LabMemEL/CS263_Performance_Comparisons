@@ -30,6 +30,16 @@
 |5000 | 0.3612260818481445  | 10780672 |
 |10000| 1.3939342498779297  | 12271616 |
 |50000| NA | NA|
+
+
+* matmul
+
+| Argv | Execution Time(sec) | Memory(bytes) |
+| :---: | :----: | :-------: |
+| 100 | 0.11944198608398438  | 10096640  |
+| 500 | 13.7977900505065925     | 19955712 |
+|1000 |   107.124666929245   |  46149632  |
+
 ## Reference
 1. [The Computer Language Benchmark Game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/)
 2. [Programming Language Benchmarks](https://attractivechaos.github.io/plb/)
