@@ -45,3 +45,4 @@
 2. [Programming Language Benchmarks](https://attractivechaos.github.io/plb/)
 3. [Language Benchmark](http://www.bioinformatics.org/benchmark/)
 4. [SJCL Crypto for Py & Js](https://github.com/berlincode/sjcl)
+5. [SCEE encryption for py, js and rb](https://github.com/luke-park/SecureCompatibleEncryptionExamples)
