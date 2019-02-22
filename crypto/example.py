@@ -22,6 +22,16 @@ URL_COMMENT = URL_API + '/blog/%(blog)s/posts/%(post)s/comments?offset=%(offset)
 URL_IMAGES = URL_API + '/images/%(image)s'
 
 
+# start = time.time()
+
+# message=''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(1000000))
+# cyphertext = SJCL().encrypt(message, "shared_secret")
+
+# end = time.time()
+# print('Total Execution Time: ', end - start, ' second')
+# # print cyphertext
+# # print SJCL().decrypt(cyphertext, "shared_secret")
+
 def write_file(fname_parts, content):
     """ write a file and create all needed directories """
 
