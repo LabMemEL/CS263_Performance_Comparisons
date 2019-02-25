@@ -1,7 +1,7 @@
 # CS263_Performance_Comparisons
 
 ## Language Benchmarks
-* [pidigits] :Streaming arbitrary-precision arithmetic
+* pidigits :Streaming arbitrary-precision arithmetic
 * binary-trees: Allocate and deallocate many many binary trees
 * n-body: Double-precision N-body simulation
 * reverse-complement: write DNA reverse complement
