@@ -48,9 +48,10 @@
 5. [SCEE encryption for py, js and rb](https://github.com/luke-park/SecureCompatibleEncryptionExamples)
 
 ## Paper
-1. [Hello](http://delivery.acm.org/10.1145/2740000/2738614/p103-rohou.pdf?ip=169.231.54.24&id=2738614&acc=ACTIVE%20SERVICE&key=CA367851C7E3CE77%2E022A0CC51A76093F%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1551066458_a6dbeef3b3303d0c99121ee80fa1c85e)
+1. [NA](http://delivery.acm.org/10.1145/2740000/2738614/p103-rohou.pdf?ip=169.231.54.24&id=2738614&acc=ACTIVE%20SERVICE&key=CA367851C7E3CE77%2E022A0CC51A76093F%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1551066458_a6dbeef3b3303d0c99121ee80fa1c85e)
 2. [A Comprehensive Evaluation of Common Python Implementations](https://ieeexplore.ieee.org/abstract/document/6879048)
 3. [Performance Comparison and Evaluation of Web Development Technologies](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7023652&tag=1)
-4.
+4. [A comparison of object oriented scripting languages: Python and Ruby](http://115.78.133.167:81/bitstream/TVHG_07113876976/1517/1/idoc.vn_a-comparison-of-object-oriented-scripting-languages-python-and-ruby.pdf)
+
 
 
