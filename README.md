@@ -52,6 +52,7 @@
 2. [A Comprehensive Evaluation of Common Python Implementations](https://ieeexplore.ieee.org/abstract/document/6879048)
 3. [Performance Comparison and Evaluation of Web Development Technologies](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7023652&tag=1)
 4. [A comparison of object oriented scripting languages: Python and Ruby](http://115.78.133.167:81/bitstream/TVHG_07113876976/1517/1/idoc.vn_a-comparison-of-object-oriented-scripting-languages-python-and-ruby.pdf)
+5. [Benchmark may mislead Javascript Engineer](https://www.microsoft.com/en-us/research/publication/jsmeter-characterizing-real-world-behavior-of-javascript-programs/)
 
 
 
