@@ -4,8 +4,8 @@
 * pidigits :Streaming arbitrary-precision arithmetic
 * binary-trees: Allocate and deallocate many many binary trees
 * n-body: Double-precision N-body simulation
+* fasta: generate DNA sequences
 * reverse-complement: write DNA reverse complement
-* k-nucleotide: Hashtable update and k-nucleotide strings
 * sudoku: solving 20 extremely hard Sudokus repeated 50 times
 * matmul: multiplying two 100x1000 matrices 
 * patmch: finding lines matching a complex regexp
