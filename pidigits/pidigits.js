@@ -2,12 +2,9 @@
  * https://salsa.debian.org/benchmarksgame-team/benchmarksgame/
  *
  * contributed by Denis Gribov
- *    a translation of the C program contributed by Mr Ledhug
- */
-
-(function main() {
-
-  let n = +process.argv[2] || 10,
+ *    a translation of the C program contributed by Mr Ledhu
+*/
+  let n = +process.argv[2] || 10000,
     i = 0,
     k = 0,
     acc = 0n,
@@ -75,4 +72,3 @@
   }
 
   process.stdout.write(buf);
-})();
