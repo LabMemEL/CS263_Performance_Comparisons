@@ -11,6 +11,7 @@ from os import cpu_count
 from re import sub
 from sys import argv, stdout
 import sys
+import os
 
 write = stdout.buffer.write
 
@@ -219,6 +220,9 @@ CCACTGCACTCCAGCCTGGGCGACAGAGCGAGACTCCGTCTCAAAAA
 
         for p in processes:
             p.join()
+
+        os.system(
+            'ls /../fasta > out.txt')
 
 
 if __name__ == "__main__":
