@@ -1,9 +1,3 @@
-require 'ruby-prof'
-
-# profile the code
-RubyProf.start
-
-
 def sd_genmat()
 	mr = Array.new(324) { [] }
 	mc = Array.new(729) { [] }
@@ -111,11 +105,4 @@ STDIN.each do |line|
 		ret.each do |s| puts s.join end
 		puts
 	end
-# ... code to profile ...
-result = RubyProf.stop
-
-# print a flat profile to text
-printer = RubyProf::FlatPrinter.new(result)
-printer.print(STDOUT)
-
 end
