@@ -1,0 +1,15 @@
+Ruby 2.5 (YARV interpreter, red thread)
+
+Resident set size (rss)to record memory
+
+
+Running this code would give an output similar to this:
+
+****CPU Bound****
+CPU time	=	5038
+Wall time	=	5142
+
+****IO Bound****
+CPU time	=	337898
+Wall time	=	475864
+This clearly shows that on a single CPU core, CPU time and Wall time are nearly equal when running purely CPU bound instructions whereas CPU time is always less that Wall time when running I/O bound instructions.

@@ -1,3 +1,6 @@
+require 'gmp'
+require 'benchmark'
+require 'get_process_mem'
 def matmul(a, b)
 	m = a.length
 	n = a[0].length
@@ -35,12 +38,23 @@ def matgen(n)
 	return a
 end
 
-n = 100
-if ARGV.length >= 1
-	n = ARGV[0].to_i
+def test(x)
+	n = (x||100).to_i
+	# if ARGV.length >= 1
+	# 	n = ARGV[0].to_i
+	# end
+	n = n / 2 * 2
+	a = matgen(n)
+	b = matgen(n)
+	c = matmul(a, b)
+	puts c[n/2][n/2]
 end
-n = n / 2 * 2
-a = matgen(n)
-b = matgen(n)
-c = matmul(a, b)
-puts c[n/2][n/2]
+
+# cpu and wall time
+Benchmark.bm do |x|
+	x.report('Times: ')        { test(1000) }
+	# x.compare!
+  end
+  
+  mem = GetProcessMem.new
+  puts mem.inspect
