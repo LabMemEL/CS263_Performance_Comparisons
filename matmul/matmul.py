@@ -35,11 +35,19 @@ def main():
 
 
 if __name__ == '__main__':
-    start = time.time()
-    main()
-    end = time.time()
+    # For testing performance
+    start_wall = time.time()
+    start_cpu = time.clock()
+    start_core = psutil.cpu_times_percent(interval=None)
 
-    print('*'*50)
+    main()
+
+    end_wall = time.time()
+    end_cpu = time.clock()
+    end_core = psutil.cpu_times_percent(interval=None, percpu=True)
+
     process = psutil.Process(os.getpid())
-    print('Total Execution Time: ', end - start, ' second')
+    print('Total Wall Time: ', end_wall - start_wall, ' second')
+    print('Total CPU Time: ', end_cpu - start_cpu, ' second')
     print('Total Memery Used: ', process.memory_info().rss, ' bytes')  # in bytes
+    print('Total core util: ', end_core, ' percent')

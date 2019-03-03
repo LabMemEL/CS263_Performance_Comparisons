@@ -150,3 +150,27 @@ Total Memery Used:  80543744  bytes
 Total core util:  [scputimes(user=94.0, nice=0.0, system=2.2, idle=3.8), scputimes(user=90.3, nice=0.0, system=1.5, idle=8.2), scputimes(user=94.5, nice=0.0, system=1.9, idle=3.6), scputimes(user=90.5, nice=0.0, system=1.6, idle=8.0)]  percent
 
 
+
+6. matmul:
+size = 100
+Total Wall Time:  0.11578106880187988  second
+Total CPU Time:  0.114725  second
+Total Memery Used:  10100736  bytes
+Total core util:  [scputimes(user=9.0, nice=0.0, system=1.0, idle=3.0), scputimes(user=1.0, nice=0.0, system=0.0, idle=11.0), scputimes(user=2.0, nice=0.0, system=0.0, idle=9.0), scputimes(user=1.0, nice=0.0, system=0.0, idle=10.0)]  percent
+
+
+size = 500
+Total Wall Time:  13.115402936935425  second
+Total CPU Time:  13.099924999999999  second
+Total Memery Used:  19988480  bytes
+Total core util:  [scputimes(user=33.0, nice=0.0, system=1.7, idle=65.4), scputimes(user=2.1, nice=0.0, system=0.4, idle=97.5), scputimes(user=63.8, nice=0.0, system=1.0, idle=35.2), scputimes(user=2.2, nice=0.0, system=0.2, idle=97.6)]  percent
+
+
+size = 1000
+Total Wall Time:  104.05977988243103  second
+Total CPU Time:  103.713112  second
+Total Memery Used:  46202880  bytes
+Total core util:  [scputimes(user=36.5, nice=0.0, system=3.0, idle=60.5), scputimes(user=4.2, nice=0.0, system=0.4, idle=95.4), scputimes(user=59.9, nice=0.0, system=2.2, idle=37.9), scputimes(user=4.5, nice=0.0, system=0.4, idle=95.0)]  percent
+
+
+
