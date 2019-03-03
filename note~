@@ -1,6 +1,7 @@
 Ruby 2.5 (YARV interpreter, red thread)
 
 Resident set size (rss)to record memory
+https://github.com/schneems/get_process_mem
 
 
 Running this code would give an output similar to this:

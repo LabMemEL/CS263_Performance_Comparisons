@@ -14,3 +14,7 @@ Wall time	=	5142
 CPU time	=	337898
 Wall time	=	475864
 This clearly shows that on a single CPU core, CPU time and Wall time are nearly equal when running purely CPU bound instructions whereas CPU time is always less that Wall time when running I/O bound instructions.
+
+
+patmatch
+https://github.com/mariomka/regex-benchmark
