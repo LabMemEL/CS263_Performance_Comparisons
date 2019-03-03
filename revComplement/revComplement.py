@@ -6,7 +6,9 @@
 from sys import stdin, stdout
 from os import cpu_count
 import sys
-
+import os
+import psutil
+import time
 
 reverse_translation = bytes.maketrans(
     b'ABCDGHKMNRSTUVWYabcdghkmnrstuvwy',
@@ -62,6 +64,12 @@ if __name__ == '__main__':
     flush = stdout.buffer.flush
 
     s = read_sequences(stdin.buffer)
+
+    # For measuring performance
+    start_wall = time.time()
+    start_cpu = time.clock()
+    start_core = psutil.cpu_times_percent(interval=None)
+
     data = next(s)
     if cpu_count() == 1 or len(data[1]) < 1000000:
         from itertools import starmap
@@ -89,3 +97,14 @@ if __name__ == '__main__':
             q.put(None)
         for p in processes:
             p.join()
+
+    end_wall = time.time()
+    end_cpu = time.clock()
+    end_core = psutil.cpu_times_percent(interval=None, percpu=True)
+
+    process = psutil.Process(os.getpid())
+    print('Total Wall Time: ', end_wall - start_wall, ' second')
+    print('Total CPU Time: ', end_cpu - start_cpu, ' second')
+    print('Total Memery Used: ',
+          process.memory_info().rss, ' bytes')  # in bytes
+    print('Total core util: ', end_core, ' percent')

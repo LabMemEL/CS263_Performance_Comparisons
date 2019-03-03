@@ -9,14 +9,19 @@
 
 import sys
 from math import sqrt
+import os
+import psutil
+import time
+
 
 def combinations(l):
     result = []
     for x in range(len(l) - 1):
         ls = l[x+1:]
         for y in ls:
-            result.append((l[x][0],l[x][1],l[x][2],y[0],y[1],y[2]))
+            result.append((l[x][0], l[x][1], l[x][2], y[0], y[1], y[2]))
     return result
+
 
 PI = 3.14159265358979323
 SOLAR_MASS = 4 * PI * PI
@@ -55,10 +60,11 @@ BODIES = {
                 [2.68067772490389322e-03 * DAYS_PER_YEAR,
                  1.62824170038242295e-03 * DAYS_PER_YEAR,
                  -9.51592254519715870e-05 * DAYS_PER_YEAR],
-                5.15138902046611451e-05 * SOLAR_MASS) }
+                5.15138902046611451e-05 * SOLAR_MASS)}
 
 SYSTEM = tuple(BODIES.values())
 PAIRS = tuple(combinations(SYSTEM))
+
 
 def advance(dt, n, bodies=SYSTEM, pairs=PAIRS):
     for i in range(n):
@@ -66,7 +72,7 @@ def advance(dt, n, bodies=SYSTEM, pairs=PAIRS):
             dx = x1 - x2
             dy = y1 - y2
             dz = z1 - z2
-            dist = sqrt(dx * dx + dy * dy + dz * dz);
+            dist = sqrt(dx * dx + dy * dy + dz * dz)
             mag = dt / (dist*dist*dist)
             b1m = m1 * mag
             b2m = m2 * mag
@@ -81,6 +87,7 @@ def advance(dt, n, bodies=SYSTEM, pairs=PAIRS):
             r[1] += dt * vy
             r[2] += dt * vz
 
+
 def report_energy(bodies=SYSTEM, pairs=PAIRS, e=0.0):
     for ((x1, y1, z1), v1, m1, (x2, y2, z2), v2, m2) in pairs:
         dx = x1 - x2
@@ -90,6 +97,7 @@ def report_energy(bodies=SYSTEM, pairs=PAIRS, e=0.0):
     for (r, [vx, vy, vz], m) in bodies:
         e += m * (vx * vx + vy * vy + vz * vz) / 2.
     print("%.9f" % e)
+
 
 def offset_momentum(ref, bodies=SYSTEM, px=0.0, py=0.0, pz=0.0):
     for (r, [vx, vy, vz], m) in bodies:
@@ -101,11 +109,28 @@ def offset_momentum(ref, bodies=SYSTEM, px=0.0, py=0.0, pz=0.0):
     v[1] = py / m
     v[2] = pz / m
 
+
 def main(n, ref='sun'):
+    # For measuring performance
+    start_wall = time.time()
+    start_cpu = time.clock()
+    start_core = psutil.cpu_times_percent(interval=None)
+
     offset_momentum(BODIES[ref])
     report_energy()
     advance(0.01, n)
     report_energy()
+
+    end_wall = time.time()
+    end_cpu = time.clock()
+    end_core = psutil.cpu_times_percent(interval=None, percpu=True)
+
+    process = psutil.Process(os.getpid())
+    print('Total Wall Time: ', end_wall - start_wall, ' second')
+    print('Total CPU Time: ', end_cpu - start_cpu, ' second')
+    print('Total Memery Used: ', process.memory_info().rss, ' bytes')  # in bytes
+    print('Total core util: ', end_core, ' percent')
+
 
 if __name__ == '__main__':
     main(int(sys.argv[1]))

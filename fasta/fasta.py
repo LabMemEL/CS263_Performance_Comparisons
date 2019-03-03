@@ -12,6 +12,8 @@ from re import sub
 from sys import argv, stdout
 import sys
 import os
+import psutil
+import time
 
 write = stdout.buffer.write
 
@@ -174,6 +176,11 @@ def random_selection(header, alphabet, n, width, seed, locks=None):
 
 
 def fasta(n):
+    # For measuring performance
+    start_wall = time.time()
+    start_cpu = time.clock()
+    start_core = psutil.cpu_times_percent(interval=None)
+
     alu = sub(r'\s+', '', """
 GGCCGGGCGCGGTGGCTCACGCCTGTAATCCCAGCACTTTGGGAGGCCGAGGCGGGCGGA
 TCACCTGAGGTCAGGAGTTCGAGACCAGCCTGGCCAACATGGTGAAACCCCGTCTCTACT
@@ -221,8 +228,19 @@ CCACTGCACTCCAGCCTGGGCGACAGAGCGAGACTCCGTCTCAAAAA
         for p in processes:
             p.join()
 
-        os.system(
-            'ls /../fasta > out.txt')
+        end_wall = time.time()
+        end_cpu = time.clock()
+        end_core = psutil.cpu_times_percent(interval=None, percpu=True)
+
+        process = psutil.Process(os.getpid())
+        print('Total Wall Time: ', end_wall - start_wall, ' second')
+        print('Total CPU Time: ', end_cpu - start_cpu, ' second')
+        print('Total Memery Used: ',
+              process.memory_info().rss, ' bytes')  # in bytes
+        print('Total core util: ', end_core, ' percent')
+
+        # os.system(
+        #    'ls /Users/Okami/Desktop/CS263_Performance_Comparisons/fasta/ > out_100.txt')
 
 
 if __name__ == "__main__":

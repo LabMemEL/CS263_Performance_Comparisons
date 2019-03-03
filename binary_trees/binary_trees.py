@@ -12,8 +12,11 @@ import os
 import psutil
 import time
 
-# Set start time 
-start = time.time()
+# Set start time
+start_wall = time.time()
+start_cpu = time.clock()
+start_core = psutil.cpu_times_percent(interval=None)
+
 
 def make_tree(d):
 
@@ -70,23 +73,23 @@ def main(n, min_depth=4):
     for d in range(min_depth, stretch_depth, 2):
         i = 2 ** (mmd - d)
         cs = 0
-        for argchunk in get_argchunks(i,d):
+        for argchunk in get_argchunks(i, d):
             cs += sum(chunkmap(make_check, argchunk))
         print('{0}\t trees of depth {1}\t check: {2}'.format(i, d, cs))
 
     print('long lived tree of depth {0}\t check: {1}'.format(
           max_depth, check_tree(long_lived_tree)))
 
-    # Set end time
-    end = time.time()
+    end_wall = time.time()
+    end_cpu = time.clock()
+    end_core = psutil.cpu_times_percent(interval=None, percpu=True)
 
-    print('*'*50)
-
-    print('Total Execution Time: ', end - start, ' second')
-
-    # Get the memory usage of current python instance
     process = psutil.Process(os.getpid())
-    print('Total Memery Used: ', process.memory_info().rss, ' bytes')  # in bytes
+    print('Total Wall Time: ', end_wall - start_wall, ' second')
+    print('Total CPU Time: ', end_cpu - start_cpu, ' second')
+    print('Total Memery Used: ',
+          process.memory_info().rss, ' bytes')  # in bytes
+    print('Total core util: ', end_core, ' percent')
 
 
 if __name__ == '__main__':

@@ -1,0 +1,152 @@
+1.pidigits:
+digits = 100
+Total Wall Time:  0.002649068832397461  second
+Total CPU Time:  0.0017520000000000036  second
+Total Memery Used:  9756672  bytes
+Total core util:  [scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=1.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0)]  percent
+
+digits = 500
+Total Wall Time:  0.009176015853881836  second
+Total CPU Time:  0.009169999999999998  second
+Total Memery Used:  9781248  bytes
+Total core util:  [scputimes(user=1.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=1.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=1.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=1.0)]  percent
+
+digits = 1000
+Total Wall Time:  0.029083251953125  second
+Total CPU Time:  0.028317999999999996  second
+Total Memery Used:  9961472  bytes
+Total core util:  [scputimes(user=1.0, nice=0.0, system=0.0, idle=2.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=3.0), scputimes(user=3.0, nice=0.0, system=0.0, idle=1.0), scputimes(user=1.0, nice=0.0, system=0.0, idle=2.0)]  percent
+
+digits = 5000
+Total Wall Time:  0.3886528015136719  second
+Total CPU Time:  0.387337  second
+Total Memery Used:  10940416  bytes
+Total core util:  [scputimes(user=23.0, nice=0.0, system=0.0, idle=15.0), scputimes(user=4.0, nice=0.0, system=0.0, idle=35.0), scputimes(user=11.0, nice=0.0, system=0.0, idle=28.0), scputimes(user=2.0, nice=0.0, system=1.0, idle=36.0)]  percent
+
+digits = 10000
+Total Wall Time:  1.4014222621917725  second
+Total CPU Time:  1.400083  second
+Total Memery Used:  12500992  bytes
+Total core util:  [scputimes(user=30.9, nice=0.0, system=1.4, idle=67.6), scputimes(user=2.1, nice=0.0, system=0.0, idle=97.9), scputimes(user=65.0, nice=0.0, system=0.7, idle=34.3), scputimes(user=4.3, nice=0.0, system=0.7, idle=95.0)]  percent
+
+
+
+2.nbody:
+n = 100
+Total Wall Time:  0.0014119148254394531  second
+Total CPU Time:  0.0013999999999999985  second
+Total Memery Used:  9224192  bytes
+Total core util:  [scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0)]  percent
+
+
+n = 500
+Total Wall Time:  0.006402015686035156  second
+Total CPU Time:  0.006392999999999996  second
+Total Memery Used:  9252864  bytes
+Total core util:  [scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=1.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0)]  percent
+
+
+n = 1000
+Total Wall Time:  0.014039993286132812  second
+Total CPU Time:  0.014031999999999989  second
+Total Memery Used:  9375744  bytes
+Total core util:  [scputimes(user=1.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=2.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=1.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=1.0)]  percent
+
+
+n = 5000
+Total Wall Time:  0.06859707832336426  second
+Total CPU Time:  0.06631899999999999  second
+Total Memery Used:  9306112  bytes
+Total core util:  [scputimes(user=3.0, nice=0.0, system=1.0, idle=4.0), scputimes(user=2.0, nice=0.0, system=0.0, idle=5.0), scputimes(user=4.0, nice=0.0, system=1.0, idle=3.0), scputimes(user=1.0, nice=0.0, system=0.0, idle=6.0)]  percent
+
+
+n = 10000
+Total Wall Time:  0.13194489479064941  second
+Total CPU Time:  0.129758  second
+Total Memery Used:  9273344  bytes
+Total core util:  [scputimes(user=3.0, nice=0.0, system=1.0, idle=10.0), scputimes(user=2.0, nice=0.0, system=0.0, idle=11.0), scputimes(user=7.0, nice=0.0, system=0.0, idle=5.0), scputimes(user=3.0, nice=0.0, system=0.0, idle=11.0)]  percent
+
+
+
+
+3.fasta:
+pairs = 100
+Total Wall Time:  0.043614864349365234  second
+Total CPU Time:  0.021966  second
+Total Memery Used:  11239424  bytes
+Total core util:  [scputimes(user=2.0, nice=0.0, system=1.0, idle=2.0), scputimes(user=0.0, nice=0.0, system=1.0, idle=3.0), scputimes(user=1.0, nice=0.0, system=2.0, idle=1.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=4.0)]  percent
+
+
+pairs = 500
+Total Wall Time:  0.09497499465942383  second
+Total CPU Time:  0.02046500000000001  second
+Total Memery Used:  11128832  bytes
+Total core util:  [scputimes(user=4.0, nice=0.0, system=3.0, idle=2.0), scputimes(user=2.0, nice=0.0, system=3.0, idle=5.0), scputimes(user=4.0, nice=0.0, system=4.0, idle=2.0), scputimes(user=2.0, nice=0.0, system=3.0, idle=4.0)]  percent
+
+pairs = 1000
+Total Wall Time:  0.09619879722595215  second
+Total CPU Time:  0.022202  second
+Total Memery Used:  11292672  bytes
+Total core util:  [scputimes(user=4.0, nice=0.0, system=4.0, idle=2.0), scputimes(user=2.0, nice=0.0, system=4.0, idle=4.0), scputimes(user=2.0, nice=0.0, system=4.0, idle=3.0), scputimes(user=2.0, nice=0.0, system=4.0, idle=4.0)]  percent
+
+pairs = 5000
+Total Wall Time:  0.11147284507751465  second
+Total CPU Time:  0.017642000000000005  second
+Total Memery Used:  11104256  bytes
+Total core util:  [scputimes(user=5.0, nice=0.0, system=4.0, idle=4.0), scputimes(user=3.0, nice=0.0, system=5.0, idle=4.0), scputimes(user=5.0, nice=0.0, system=4.0, idle=3.0), scputimes(user=3.0, nice=0.0, system=5.0, idle=4.0)]  percent
+
+pairs = 10000
+Total Wall Time:  0.12270784378051758  second
+Total CPU Time:  0.016752000000000003  second
+Total Memery Used:  11210752  bytes
+Total core util:  [scputimes(user=5.0, nice=0.0, system=5.0, idle=3.0), scputimes(user=4.0, nice=0.0, system=5.0, idle=5.0), scputimes(user=4.0, nice=0.0, system=4.0, idle=4.0), scputimes(user=4.0, nice=0.0, system=4.0, idle=5.0)]  percent
+
+
+
+4.revComplement:
+pairs = 100
+Total Wall Time:  0.00011610984802246094  second
+Total CPU Time:  0.00011200000000000099  second
+Total Memery Used:  9314304  bytes
+Total core util:  [scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0)]  percent
+
+pairs = 500
+Total Wall Time:  0.000186920166015625  second
+Total CPU Time:  0.0001820000000000016  second
+Total Memery Used:  9375744  bytes
+Total core util:  [scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0)]  percent
+
+pairs = 1000
+Total Wall Time:  0.00028705596923828125  second
+Total CPU Time:  0.00028300000000000547  second
+Total Memery Used:  9359360  bytes
+Total core util:  [scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0)]  percent
+
+pairs = 5000
+Total Wall Time:  0.0008280277252197266  second
+Total CPU Time:  0.0008240000000000053  second
+Total Memery Used:  9568256  bytes
+Total core util:  [scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0)]  percent
+
+pairs = 10000
+Total Wall Time:  0.0015439987182617188  second
+Total CPU Time:  0.0015389999999999987  second
+Total Memery Used:  9699328  bytes
+Total core util:  [scputimes(user=0.0, nice=0.0, system=0.0, idle=1.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=0.0), scputimes(user=0.0, nice=0.0, system=0.0, idle=1.0)]  percent
+
+
+
+5.binary_tree:
+depth = 10
+Total Wall Time:  0.05893898010253906  second
+Total CPU Time:  0.026685  second
+Total Memery Used:  11333632  bytes
+Total core util:  [scputimes(user=4.0, nice=0.0, system=1.0, idle=2.0), scputimes(user=3.0, nice=0.0, system=1.0, idle=1.0), scputimes(user=5.0, nice=0.0, system=1.0, idle=0.0), scputimes(user=3.0, nice=0.0, system=0.0, idle=2.0)]  percent
+
+depth = 20
+Total Wall Time:  65.73712515830994  second
+Total CPU Time:  4.331168  second
+Total Memery Used:  80543744  bytes
+Total core util:  [scputimes(user=94.0, nice=0.0, system=2.2, idle=3.8), scputimes(user=90.3, nice=0.0, system=1.5, idle=8.2), scputimes(user=94.5, nice=0.0, system=1.9, idle=3.6), scputimes(user=90.5, nice=0.0, system=1.6, idle=8.0)]  percent
+
+

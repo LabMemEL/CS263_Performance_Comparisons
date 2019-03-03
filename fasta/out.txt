@@ -1,3 +1,0 @@
-DNAseq.txt
-fasta.py
-out.txt

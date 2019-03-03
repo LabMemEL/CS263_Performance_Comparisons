@@ -67,9 +67,9 @@ end_cpu = time.clock()
 end_core = psutil.cpu_times_percent(interval=None, percpu=True)
 
 
-#print('*'*50)
+# print('*'*50)
 process = psutil.Process(os.getpid())
 print('Total Wall Time: ', end_wall - start_wall, ' second')
 print('Total CPU Time: ', end_cpu - start_cpu, ' second')
 print('Total Memery Used: ', process.memory_info().rss, ' bytes')  # in bytes
-print('Total core util: ', end_core , ' percent')
+print('Total core util: ', end_core, ' percent')
