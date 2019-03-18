@@ -24,14 +24,19 @@
 For every program, we enable the user input. To run the program, type python3 / ruby / js, plus script name and input value.
 We put pigits here to illustrate how to run, other scripts are almost same.
 * Python
+
 '''
 Python3 pidigits.py 5000
 '''
+
 * Ruby
+
 '''
 ruby pidigits.rb 5000
 '''
+
 * Javascript
+
 '''
 js pidigits.js 5000
 '''
