@@ -21,21 +21,21 @@
 | Week 8 (Feb.23 ~ Mar.1) | Estimate and validate how much the use of languages we choose cost when run using different instance sizes on cloud infrastructures, e.g. AWS and Azure   |
 
 ## Test Environments 
-* Benchmark machine:
-CPU: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz
-  Memory: 8GB
-  OS: Ubuntu 14.04 LTS VM
-* Interpreters:
-  Python--Cpython 3.4.3
-  Ruby--CRuby/YARV 2.5
-  JS--SpiderMonkey 52
-* Benchmarking & evaluation tools: 
-  Ruby: benchmark, get_process_mem
-  Python: psutil, time, subprocess
-  Javascript: js-shell 
-  mem, psutil & time, subprocess & js-shell
-*Profilers (tracing):  
-  ruby-prof; cProfiler
+* Benchmark machine:<br />
+CPU: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz<br />
+  Memory: 8GB<br />
+  OS: Ubuntu 14.04 LTS VM<br />
+* Interpreters:<br />
+  Python--Cpython 3.4.3<br />
+  Ruby--CRuby/YARV 2.5<br />
+  JS--SpiderMonkey 52<br />
+* Benchmarking & evaluation tools: <br />
+  Ruby: benchmark, get_process_mem<br />
+  Python: psutil, time, subprocess<br />
+  Javascript: js-shell <br />
+  mem, psutil & time, subprocess & js-shell<br />
+*Profilers (tracing):  <br />
+  ruby-prof; cProfiler<br />
 
 
 ## Hoow To Run
