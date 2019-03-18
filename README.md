@@ -20,6 +20,23 @@
 | Week 7 (Feb.16 ~ Feb.22) | Implement Pattern Matching and Matrix multiplication in different programming language. Estimate their performance.    |
 | Week 8 (Feb.23 ~ Mar.1) | Estimate and validate how much the use of languages we choose cost when run using different instance sizes on cloud infrastructures, e.g. AWS and Azure   |
 
+## Test Environments 
+* Benchmark machine:
+CPU: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz
+Memory: 8GB
+OS: Ubuntu 14.04 LTS VM
+* Interpreters:
+Python--Cpython 3.4.3
+Ruby--CRuby/YARV 2.5
+JS--SpiderMonkey 52
+* Benchmarking & evaluation tools: 
+Ruby: benchmark, get_process_mem
+Python: psutil, time, subprocess
+Javascript: js-shell 
+mem, psutil & time, subprocess & js-shell
+Profilers (tracing):  ruby-prof; cProfiler
+
+
 ## Hoow To Run
 For every program, we enable the user input. To run the program, type python3 / ruby / js, plus script name and input value.
 We put pigits here to illustrate how to run, other scripts are almost same.
