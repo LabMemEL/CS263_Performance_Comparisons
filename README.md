@@ -34,7 +34,7 @@ CPU: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz<br />
   Python: psutil, time, subprocess<br />
   Javascript: js-shell <br />
   mem, psutil & time, subprocess & js-shell<br />
-*Profilers (tracing):  <br />
+* Profilers (tracing):  <br />
   ruby-prof; cProfiler<br />
 
 
