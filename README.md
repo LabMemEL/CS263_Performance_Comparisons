@@ -23,18 +23,19 @@
 ## Test Environments 
 * Benchmark machine:
 CPU: Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz
-Memory: 8GB
-OS: Ubuntu 14.04 LTS VM
+  Memory: 8GB
+  OS: Ubuntu 14.04 LTS VM
 * Interpreters:
-Python--Cpython 3.4.3
-Ruby--CRuby/YARV 2.5
-JS--SpiderMonkey 52
+  Python--Cpython 3.4.3
+  Ruby--CRuby/YARV 2.5
+  JS--SpiderMonkey 52
 * Benchmarking & evaluation tools: 
-Ruby: benchmark, get_process_mem
-Python: psutil, time, subprocess
-Javascript: js-shell 
-mem, psutil & time, subprocess & js-shell
-Profilers (tracing):  ruby-prof; cProfiler
+  Ruby: benchmark, get_process_mem
+  Python: psutil, time, subprocess
+  Javascript: js-shell 
+  mem, psutil & time, subprocess & js-shell
+*Profilers (tracing):  
+  ruby-prof; cProfiler
 
 
 ## Hoow To Run
