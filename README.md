@@ -20,6 +20,22 @@
 | Week 7 (Feb.16 ~ Feb.22) | Implement Pattern Matching and Matrix multiplication in different programming language. Estimate their performance.    |
 | Week 8 (Feb.23 ~ Mar.1) | Estimate and validate how much the use of languages we choose cost when run using different instance sizes on cloud infrastructures, e.g. AWS and Azure   |
 
+## Hoow To Run
+For every program, we enable the user input. To run the program, type python3 / ruby / js, plus script name and input value.
+We put pigits here to illustrate how to run, other scripts are almost same.
+* Python
+'''
+Python3 pidigits.py 5000
+'''
+* Ruby
+'''
+ruby pidigits.rb 5000
+'''
+* Javascript
+'''
+js pidigits.js 5000
+'''
+
 ## Performance
 * pidigits
 
